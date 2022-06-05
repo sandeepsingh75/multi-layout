@@ -6,7 +6,7 @@ import Header from '../../Header/HeaderTop/Header';
 function Frontend(props) {
     return (
         <div>
-            Frontend
+            {/* Frontend */}
             <Header />
             <Outlet />
         </div>

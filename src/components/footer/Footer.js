@@ -6,7 +6,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CircleIcon from '@mui/icons-material/Circle';
 import image from '../../images/icons_payment 1.png';
-
+import { topLeftFooter } from '../Helpers/Describe';
+import { topRightFooter } from '../Helpers/Describe';
 const Scroll = styled('Typography')(({theme})=>({
     [theme.breakpoints.up('lg')]: {
         marginLeft:'4rem',
@@ -29,89 +30,44 @@ const Images = styled('img')(({theme})=>({
 }))
 
 const Footer = () => {
+    // console.log('topLeftFooter', topLeftFooter)
+    // console.log('topRightFooter', topRightFooter)
     return (
         <Box   sx={{marginTop:'5rem', marginBottom:'3rem'}} >
        <Grid container>
         <Grid item lg={4}>
              <Typography mt={2} mb={1} sx={{fontWeight:800}}>
-                 CORAL
+                {topLeftFooter.title}
              </Typography>
              <Typography sx={{lineHeight:2.5}}>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, quae. Maiores asperiores aliquam nostrum, ratione reiciendis iusto necessitatibus deserunt  Dolor!
-             </Typography>
+                 {topLeftFooter.description}             </Typography>
             <Button color='inherit'> <FacebookIcon /> </Button>
             <Button color="inherit"> <TwitterIcon /> </Button>
              <Button color='inherit'> <LinkedInIcon /> </Button>
              <Button color='inherit'> <CircleIcon /> </Button>
         </Grid>
-        <Grid item lg={2} spacing={1}>
+
+        {
+            topRightFooter.map((footer) => (
+                <Grid item lg={2.5} spacing={1}>
         
             <List>
             <ListItem>
-                    <Typography sx={{fontWeight:800}}> CATALOG </Typography>
+                    <Typography sx={{fontWeight:800}}> {footer.heading} </Typography>
                 </ListItem>
-                <ListItem>
-                    <Typography> Necklaces </Typography>
+               {
+                   footer.menus.map((menu)=>(
+                    <ListItem>
+                    <Typography> {menu.option} </Typography>
                 </ListItem>
-                <ListItem>
-                    <Typography> Hoodies </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Jwelery Box </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> T-Shirt </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Jacket </Typography>
-                </ListItem>
+                   ))
+               }
             </List>
            
-        </Grid> 
-        <Grid item lg={2}>
-        <List>
-            <ListItem>
-                    <Typography sx={{fontWeight:800}}> ABOUT US </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Our Producers </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Sitemap </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> FAQ </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> About Us</Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Terms & Conditions  </Typography>
-                </ListItem>
-            </List>
-        </Grid> 
-        <Grid item lg={4}>
-        <List>
-            <ListItem sx={{fontWeight:800}}>
-                    <Typography sx={{fontWeight:800}}> CUSTOMER SERVICES </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Contact Us </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Track Your Order </Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Product Care & Repair</Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Book An Appointment</Typography>
-                </ListItem>
-                <ListItem>
-                    <Typography> Shipping & Return  </Typography>
-                </ListItem>
-            </List>
-        </Grid> 
+        </Grid>
+            ))
+        }
+
        </Grid>
      
 <Box mt={10}>

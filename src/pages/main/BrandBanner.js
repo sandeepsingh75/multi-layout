@@ -3,7 +3,7 @@ import { Box, Button, Card, CardActions, CardContent, Typography } from '@mui/ma
 import React from 'react';
 import image from '../../images/bannerGirl.png'
 import logo from '../../images/1024px-Zara_Logo 1.png'
-
+import { brandbanner } from '../../components/Helpers/Describe';
 
  const Banner = styled(Box)(()=>({
   backgroundImage: `url(${image})`,
@@ -41,6 +41,7 @@ const Content =styled(Card)(({theme})=>({
 
 
 const BrandBanner = () => {
+  // console.log('banner', brandbanner)
     return (
       <Banner style={{position:'relative', height:'30rem'}}>
               {/* <Box> */}
