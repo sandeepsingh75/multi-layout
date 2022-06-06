@@ -23,7 +23,7 @@ function ProductList(props) {
                 <CardMedia
                   component="img"
                   height="140"
-                  image={p1}
+                  image={lists.image}
                   alt="green iguana"
                 />
                 <CardContent>

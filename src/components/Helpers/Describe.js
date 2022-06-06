@@ -1,3 +1,18 @@
+import b1 from '../../images/brand-1.png';
+import b2 from '../../images/brand-2.png';
+import b3 from '../../images/brand-3.png';
+import b4 from '../../images/brand-4.png';
+import b5 from '../../images/brand-5.png';
+
+import p1 from "../../images/p1.png";
+import p2 from "../../images/p2.png";
+import p3 from "../../images/p3.png";
+import p4 from "../../images/p4.png";
+import p5 from "../../images/p5.png";
+import p6 from "../../images/p6.png";
+import p7 from "../../images/p7.png";
+import p8 from "../../images/p8.png";
+
 export const HeaderMenus = [
     {
         menu: 'Jwellery & Accessories',
@@ -12,26 +27,25 @@ export const HeaderMenus = [
     },{
         menu: 'Art & Collectibles',
     },{
-        menu: 'Craft Supplies & Tools'
-        
+        menu: 'Craft Supplies & Tools'        
     }
 ];
 
 export const clientLists = [
     {
-        img: '../../images/brand-1.png'      
+        img: b1   
     },
     {
-        img: '../../images/brand-2.png'      
+        img: b2      
     },
     {
-        img: '../../images/brand-3.png'      
+        img: b3      
     },
     {
-        img: '../../images/brand-4.png'      
+        img: b4      
     },
     {
-        img: '../../images/brand-5.png'      
+        img: b5      
     }
 
 ];
@@ -54,49 +68,49 @@ export const ProductFilterMenus = [
 
 export const ProductLists = [
     {
-        image: '',
+        image: p1,
         name: ' Adicolor Classics Joggers',
         type: 'Dress',
         price: '63.85',
     },
     {
-        image: '',
+        image: p2,
         name: 'Classics Joggers',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p3,
         name: 'Adicolor Joggers',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p4,
         name: 'Adicolor',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p5,
         name: ' Classics ',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p6,
         name: 'Joggers',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p7,
         name: 'Adicolor Classics Joggers',
         type: 'Dress',
         price: '63.85'
     },
     {
-        image: '',
+        image: p8,
         name: ' Classics Joggers',
         type: 'Dress',
         price: '63.85'
@@ -108,6 +122,33 @@ export const brandbanner = [
         title: 'ZARA',
         description: 'Lustrous yet understated. The new evening wear collection exclusively offered at the reopened Giorgio Armani boutique in Los Angeles.',
         button:'See Collection',
+    }
+];
+
+export const products = [
+    {
+        image: p1
+    },
+    {
+        image: p2
+    },
+    {
+        image: p3
+    },
+    {
+        image: p4
+    },
+    {
+        image: p5
+    },
+    {
+        image: p6
+    },
+    {
+        image: p7
+    },
+    {
+        image: p8
     }
 ];
 

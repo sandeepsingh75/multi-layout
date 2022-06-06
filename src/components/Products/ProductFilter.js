@@ -29,7 +29,7 @@ function ProductFilter(props) {
 
           {
             ProductFilterMenus.map((menus)=>(
-              <Grid item lg={1.5}>
+              <Grid item lg={1.3}>
             <Button varient="text" color="inherit">
               {menus.menu}
             </Button>

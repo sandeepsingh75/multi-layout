@@ -11,7 +11,7 @@ function ThmbGrid(props) {
         <React.Fragment>
              <Grid  container rowSpacing={1} columnSpacing={{ xs: 10, sm: 2, md: 1 }} sx={{mt:'3rem'}}>
         <Grid item lg={6} md={6} sm={6}>
-        <Box> <img src={c1} alt="" style={{width:'100%'}} /></Box>
+        <Box> <img src={c1} alt="" style={{width:'100%', height:'39.3rem'}} /></Box>
         </Grid>
         <Grid item lg={6} md={12} sm={12}>
           <Grid container spacing={1}>

@@ -7,7 +7,7 @@ function Frontend(props) {
     return (
         <div>
             {/* Frontend */}
-            <Header />
+            {/* <Header /> */}
             <Outlet />
         </div>
     );

@@ -15,6 +15,7 @@ import {
 import  {styled} from '@mui/material/styles';
 import Slider from "react-slick";
 import ProductsMenu from "./ProductsMenu";
+import { products } from "../Helpers/Describe";
 
   const Seller = styled(Typography)(({theme})=>({
     marginLeft: '25rem', marginBottom:'3rem',
@@ -102,30 +103,15 @@ import ProductsMenu from "./ProductsMenu";
        <ProductsMenu />
   
          <Slider {...settings}>
-          <div >
-          <img src={p1} alt="" />
-          </div>
-          <div>
-          <img src={p2} alt="" />
-          </div>
-          <div>
-          <img src={p3} alt="" />
-          </div>
-          <div>
-          <img src={p4} alt="" />
-          </div>
-          <div>
-          <img src={p5} alt="" />
-          </div>
-          <div>
-          <img src={p6} alt="" />
-          </div>
-          <div>
-          <img src={p7} alt="" />
-          </div>
-          <div>
-          <img src={p8} alt="" />
-          </div>
+         {
+           products.map((images) => (
+            <div>
+            <img src={images.image} alt="" />
+            </div>
+           ))
+         }
+         
+         
         </Slider>
 
       </Box>

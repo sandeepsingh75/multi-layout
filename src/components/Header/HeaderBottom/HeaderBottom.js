@@ -6,7 +6,6 @@ function HeaderBottom(props) {
   // console.log('HeaderMenu ', HeaderMenus)
     return (
         <React.Fragment>
-           {/* <AppBar sx={{background: '#F1F1F1'}}> */}
            <Toolbar sx={{background: '#F1F1F1'}}>
           <Tabs  >
             {
@@ -19,5 +18,4 @@ function HeaderBottom(props) {
         </React.Fragment>
     );
 }
-
 export default HeaderBottom;
